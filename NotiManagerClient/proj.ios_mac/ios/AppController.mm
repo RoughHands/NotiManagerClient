@@ -27,6 +27,8 @@
 #import "cocos2d.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#include "NotiManagerClient.h"
+
 
 @implementation AppController
 
@@ -78,9 +80,83 @@ static AppDelegate s_sharedApplication;
     cocos2d::Director::getInstance()->setOpenGLView(glview);
 
     cocos2d::Application::getInstance()->run();
+    
+    // NotiManager To Do : Push Notification
+    // Add registration for remote notifications
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+    application.applicationIconBadgeNumber = 0;
 
     return YES;
 }
+
+
+// NotiManager To Do : Push Notification
+// On AcceptPush Registration
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    #if !TARGET_IPHONE_SIMULATOR
+    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+ 
+    NSUInteger rntypes = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
+ 
+    BOOL isPushBadgeOn = NO;
+    BOOL isPushAlertOn = NO;
+    BOOL isPushSoundOn = NO;
+ 
+    if( (rntypes & UIRemoteNotificationTypeBadge) != UIRemoteNotificationTypeNone )
+    {
+        isPushBadgeOn = YES;
+    }
+    if( (rntypes & UIRemoteNotificationTypeAlert) != UIRemoteNotificationTypeNone )
+    {
+        isPushAlertOn = YES;
+    }
+    if( (rntypes & UIRemoteNotificationTypeSound) != UIRemoteNotificationTypeNone )
+    {
+        isPushSoundOn = YES;
+    }
+    
+    UIDevice *dev = [UIDevice currentDevice];
+//    NSString *deviceUuid = [self uniqueDeviceIdentifier];
+    NSString *deviceName = dev.name;
+    NSString *deviceModel = dev.model;
+    NSString *deviceSystemVersion = dev.systemVersion;
+    NSString *devToken = [[[[deviceToken description] stringByReplacingOccurrencesOfString:@"<" withString:@""] stringByReplacingOccurrencesOfString:@">" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
+ 
+    // Build URL String for Registration
+    NSMutableDictionary* deviceInfoDic = [[NSMutableDictionary alloc] init];
+    [deviceInfoDic setValue:appName forKey:DeviceInfoKey(AppName)];
+    [deviceInfoDic setValue:appVersion forKey:DeviceInfoKey(AppVersion)];
+    [deviceInfoDic setValue:devToken forKey:DeviceInfoKey(DeviceToken)];
+//  [deviceInfoDic setValue:deviceUUID forKey:@"DeviceUUID"];
+    [deviceInfoDic setValue:deviceName forKey:DeviceInfoKey(DeviceName)];
+    [deviceInfoDic setValue:deviceModel forKey:DeviceInfoKey(DeviceModel)];
+    [deviceInfoDic setValue:deviceSystemVersion forKey:DeviceInfoKey(DeviceSystemVersion)];
+    [deviceInfoDic setValue:[NSNumber numberWithBool:isPushBadgeOn] forKey:DeviceInfoKey(IsPushBadgeOn)];
+    [deviceInfoDic setValue:[NSNumber numberWithBool:isPushAlertOn] forKey:DeviceInfoKey(IsPushAlertOn)];
+    [deviceInfoDic setValue:[NSNumber numberWithBool:isPushSoundOn] forKey:DeviceInfoKey(IsPushSoundOn)];
+    
+    NSError* nsError = nil;
+    NSData* deviceInfoJSONData = [NSJSONSerialization dataWithJSONObject:deviceInfoDic options:NSJSONWritingPrettyPrinted error:&nsError];
+
+    NSString* deviceInfoJSONString = nil;
+    if( !deviceInfoJSONData )
+    {
+        NSLog(@"JSON Serialization Error : %@", nsError.localizedDescription);
+        deviceInfoJSONString = [[NSString alloc] initWithString:@"{}"];
+    }
+    else
+    {
+        deviceInfoJSONString = [[NSString alloc] initWithData:deviceInfoJSONData encoding:NSUTF8StringEncoding];
+    }
+    
+    std::string deviceInfoJSONStringC = [deviceInfoJSONString UTF8String];
+    NotiManagerClient::GetInstance().RequestRegisterDeviceToken(deviceInfoJSONStringC);
+    
+    #endif
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -121,6 +197,8 @@ static AppDelegate s_sharedApplication;
      See also applicationDidEnterBackground:.
      */
 }
+
+
 
 
 #pragma mark -
