@@ -831,7 +831,6 @@
 		46C02E0918E91123004B7456 /* xxhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C02E0618E91123004B7456 /* xxhash.h */; };
 		46C02E0A18E91123004B7456 /* xxhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C02E0618E91123004B7456 /* xxhash.h */; };
 		48F3162519A4EC6E00D4FA60 /* SystemTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F3162319A4EC6E00D4FA60 /* SystemTimer.cpp */; };
-		48F3162619A4EC6E00D4FA60 /* SystemTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F3162319A4EC6E00D4FA60 /* SystemTimer.cpp */; };
 		48F3162719A4EC6E00D4FA60 /* SystemTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F3162419A4EC6E00D4FA60 /* SystemTimer.h */; };
 		48F3162819A4EC6E00D4FA60 /* SystemTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F3162419A4EC6E00D4FA60 /* SystemTimer.h */; };
 		5027253A190BF1B900AAF4ED /* cocos2d.h in Headers */ = {isa = PBXBuildFile; fileRef = 50272538190BF1B900AAF4ED /* cocos2d.h */; };
@@ -7152,7 +7151,6 @@
 				50ABBEA81925AB6F00A911A9 /* CCTouch.cpp in Sources */,
 				503DD8E91926736A00CD74DD /* CCES2Renderer.m in Sources */,
 				5027253D190BF1B900AAF4ED /* cocos2d.cpp in Sources */,
-				48F3162619A4EC6E00D4FA60 /* SystemTimer.cpp in Sources */,
 				50ABBE6A1925AB6F00A911A9 /* CCEventListenerFocus.cpp in Sources */,
 				50ABBE661925AB6F00A911A9 /* CCEventListenerCustom.cpp in Sources */,
 				503DD8F81926B0DB00CD74DD /* CCIMEDispatcher.cpp in Sources */,
