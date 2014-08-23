@@ -154,6 +154,37 @@ static AppDelegate s_sharedApplication;
     std::string deviceInfoJSONStringC = [deviceInfoJSONString UTF8String];
     NotiManagerClient::GetInstance().RequestRegisterDeviceToken(deviceInfoJSONStringC);
     
+    
+    
+    
+    
+    
+    // TEST
+    NSMutableDictionary* notiMessageDic = [[NSMutableDictionary alloc] init];
+    [notiMessageDic setValue:@"message boddy" forKey:@"body"];
+    [notiMessageDic setValue:@"action loc key" forKey:@"action_loc_key"];
+    [notiMessageDic setValue:@"loc key" forKey:@"loc_key"];
+    [notiMessageDic setValue:@"{}" forKey:@"loc_args"];
+    [notiMessageDic setValue:@"" forKey:@"launch_image"];
+    [notiMessageDic setValue:@"default" forKey:@"sound"];
+    [notiMessageDic setValue:[NSNumber numberWithInt:2] forKey:@"badge"];
+    
+    NSData* notiMessageJSONData = [NSJSONSerialization dataWithJSONObject:notiMessageDic options:NSJSONWritingPrettyPrinted error:&nsError];
+    
+    NSString* notiMessageJSONString = nil;
+    if( !notiMessageJSONData )
+    {
+        NSLog(@"JSON serialization Error : %@", nsError.localizedDescription);
+        notiMessageJSONString=[[NSString alloc] initWithString:@"{}"];
+    }
+    else
+    {
+        notiMessageJSONString = [[NSString alloc] initWithData:notiMessageJSONData encoding:NSUTF8StringEncoding];
+    }
+    
+    std::string notiMessageJSONStringC = [notiMessageJSONString UTF8String];
+    NotiManagerClient::GetInstance().RequestSendPushNotification(notiMessageJSONStringC);
+    
     #endif
 }
 

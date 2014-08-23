@@ -36,7 +36,7 @@ public:
     
     void        RequestRegisterDeviceToken(std::string deviceInfoJSON);
     
-    void        RequestSendPushNotification();
+    void        RequestSendPushNotification(std::string notiMessagePayload);
 };
 
 
