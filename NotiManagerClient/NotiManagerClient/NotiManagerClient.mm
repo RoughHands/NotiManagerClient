@@ -93,7 +93,7 @@
     if( nsError != nil )
     {
         NSLog(@"Malformed Json Dic, [%@] [%s]", nsError.localizedDescription, __FUNCTION__);
-        NSAssert(nsError!=nil, @"Malformed Json Dic, [%@] [%s]", nsError.localizedDescription, __FUNCTION__);
+        NSAssert2(nsError!=nil, @"Malformed Json Dic, [%@] [%s]", nsError.localizedDescription, __FUNCTION__);
         return;
     }
 
@@ -135,7 +135,7 @@
     if( nsError != nil )
     {
         NSLog(@"Malformed Json Dic, [%@] [%s]", nsError.localizedDescription, __FUNCTION__);
-        NSAssert(nsError!=nil, @"Malformed Json Dic, [%@] [%s]", nsError.localizedDescription, __FUNCTION__);
+        NSAssert2(nsError!=nil, @"Malformed Json Dic, [%@] [%s]", nsError.localizedDescription, __FUNCTION__);
         return;
     }
     
