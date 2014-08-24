@@ -84,6 +84,9 @@ static AppDelegate s_sharedApplication;
     // NotiManager To Do : Push Notification
     // Add registration for remote notifications
     
+    // TEST
+    [[NotiManagerClient getInstance] RequestSendPushNotification:@"Body11" badge:2 locKey:@"Loc Key" lokArgs:@"{}" actionLocKey:@"Loc Key" launchImage:@"" sound:@"default"];
+    
     [[NotiManagerClient getInstance] InitializeService:application];
     return YES;
 }
@@ -93,12 +96,12 @@ static AppDelegate s_sharedApplication;
 // On AcceptPush Registration
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
-    #if !TARGET_IPHONE_SIMULATOR
+//    #if !TARGET_IPHONE_SIMULATOR
     
-    [[NotiManagerClient getInstance] RequestRegisterDeviceToken:deviceToken];
+//    [[NotiManagerClient getInstance] RequestRegisterDeviceToken:deviceToken];
     
-    [[NotiManagerClient getInstance] RequestSendPushNotification:@"Body11" badge:2 locKey:@"Loc Key" lokArgs:@"{}" actionLocKey:@"Loc Key" launchImage:@"" sound:@"default"];
-    #endif
+//    [[NotiManagerClient getInstance] RequestSendPushNotification:@"Body11" badge:2 locKey:@"Loc Key" lokArgs:@"{}" actionLocKey:@"Loc Key" launchImage:@"" sound:@"default"];
+//    #endif
 }
 
 

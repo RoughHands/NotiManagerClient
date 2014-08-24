@@ -47,7 +47,15 @@ static NSString* DeviceInfoKey_IsPushSoundOn = @"isPushSoundOn";
                                     launchImage:(NSString*)launchImage sound:(NSString*)sound;
 -(void)OnRegisterDeviceTokenCompleted:(NSData*)responseData;
 -(void)OnSendPushNotificationCompleted:(NSData*)responseData;
+-(void)OnRegisterDeviceTokenError:(NSError*)error;
+-(void)OnSendPushNotificationError:(NSError*)error;
 @end // NotiRequest
+
+
+// How To Make Cretificate.pem
+// http://qnibus.com/blog/how-to-make-certification-for-apns/
+//  and remove pass phrase
+//  openssl rsa -in key.pem -out dev_key.pem
 
 
 // To Do 1 : On AppCotroller app did finish lauching Add Below Codes

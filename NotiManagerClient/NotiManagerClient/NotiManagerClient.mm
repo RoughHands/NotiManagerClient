@@ -100,6 +100,7 @@
     SMWebRequest* request = [SMWebRequest requestWithURL:[NSURL URLWithString:@"http://121.162.245.166:2963/PushNoti/RegisterNewUser"]];
     
     [request addTarget:self action:@selector(OnRegisterDeviceTokenCompleted:) forRequestEvents:SMWebRequestEventComplete];
+    [request addTarget:self action:@selector(OnRegisterDeviceTokenError:) forRequestEvents:SMWebRequestEventError];
     [request setHTTPMethod:HTTPMethod_POST];
     [request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:deviceInfoJSONData];
@@ -142,6 +143,7 @@
     SMWebRequest* request = [SMWebRequest requestWithURL:[NSURL URLWithString:@"http://121.162.245.166:2963/PushNoti/SendPushNotification"]];
     
     [request addTarget:self action:@selector(OnSendPushNotificationCompleted:) forRequestEvents:SMWebRequestEventComplete];
+    [request addTarget:self action:@selector(OnSendPushNotificationError:) forRequestEvents:SMWebRequestEventError];
     [request setHTTPMethod:HTTPMethod_POST];
     [request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:notiMessageJSONData];
@@ -166,6 +168,15 @@
     NSLog(@"SSST %@", responseDictionary.description);
 }
 
+-(void)OnRegisterDeviceTokenError:(NSError *)error
+{
+    NSLog(@"[Error] %@ %s", error.localizedDescription, __FUNCTION__);
+
+    SMErrorResponse* errorResponse = error.userInfo[@"response"];
+    NSString* response = [[NSString alloc] initWithData:errorResponse.data encoding:NSUTF8StringEncoding];
+    NSLog(@"[Error] %@", response);
+}
+
 -(void)OnSendPushNotificationCompleted:(NSData*)responseData
 {
     NSAssert1(responseData!=nil, @"Response Data Must not be nil, %s", __FUNCTION__);
@@ -181,6 +192,15 @@
     }
 
     NSLog(@"SSST %@", responseDictionary.description);
+}
+
+-(void)OnSendPushNotificationError:(NSError *)error
+{
+    NSLog(@"[Error] %@ %s", error.localizedDescription, __FUNCTION__);
+
+    SMErrorResponse* errorResponse = error.userInfo[@"response"];
+    NSString* response = [[NSString alloc] initWithData:errorResponse.data encoding:NSUTF8StringEncoding];
+    NSLog(@"[Error] %@", response);
 }
 
 @end // NotiManagerClient
