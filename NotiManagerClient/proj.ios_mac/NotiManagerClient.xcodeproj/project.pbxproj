@@ -55,6 +55,8 @@
 		48BC91F219AA383D0006B18B /* NotiManagerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48BC91EF19AA383D0006B18B /* NotiManagerScene.cpp */; };
 		48BC91FB19AA3E3C0006B18B /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91FA19AA3E3C0006B18B /* ReadMe.txt */; };
 		48BC91FC19AA3E3C0006B18B /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91FA19AA3E3C0006B18B /* ReadMe.txt */; };
+		48BC91FF19AA3FC20006B18B /* NotiManagerLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48BC91FD19AA3FC20006B18B /* NotiManagerLayer.cpp */; };
+		48BC920019AA3FC20006B18B /* NotiManagerLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48BC91FD19AA3FC20006B18B /* NotiManagerLayer.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -347,6 +349,8 @@
 		48BC91EF19AA383D0006B18B /* NotiManagerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NotiManagerScene.cpp; path = ../Classes/NotiManagerScene.cpp; sourceTree = "<group>"; };
 		48BC91F019AA383D0006B18B /* NotiManagerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotiManagerScene.h; path = ../Classes/NotiManagerScene.h; sourceTree = "<group>"; };
 		48BC91FA19AA3E3C0006B18B /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		48BC91FD19AA3FC20006B18B /* NotiManagerLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NotiManagerLayer.cpp; path = ../Classes/NotiManagerLayer.cpp; sourceTree = "<group>"; };
+		48BC91FE19AA3FC20006B18B /* NotiManagerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotiManagerLayer.h; path = ../Classes/NotiManagerLayer.h; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -464,6 +468,8 @@
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
 				48BC91EF19AA383D0006B18B /* NotiManagerScene.cpp */,
 				48BC91F019AA383D0006B18B /* NotiManagerScene.h */,
+				48BC91FD19AA3FC20006B18B /* NotiManagerLayer.cpp */,
+				48BC91FE19AA3FC20006B18B /* NotiManagerLayer.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -928,6 +934,7 @@
 			files = (
 				48BC91F119AA383D0006B18B /* NotiManagerScene.cpp in Sources */,
 				48BC91C319A9FFEC0006B18B /* NotiManagerClient.mm in Sources */,
+				48BC91FF19AA3FC20006B18B /* NotiManagerLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
@@ -945,6 +952,7 @@
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
 				48BC91F219AA383D0006B18B /* NotiManagerScene.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
+				48BC920019AA3FC20006B18B /* NotiManagerLayer.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				48BC91C419A9FFEC0006B18B /* NotiManagerClient.mm in Sources */,
 			);

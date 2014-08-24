@@ -10,15 +10,25 @@
 #define __NotiManagerClient__NotiManagerScene__
 
 #include "cocos2d.h"
+#include "NotiManagerLayer.h"
 
 using namespace cocos2d;
 
 class NotiManagerScene : public Scene
 {
+private:
+    NotiManagerLayer*       m_NotiManagerLayer;
 public:
+    NotiManagerScene();
+    virtual ~NotiManagerScene();
+    
     virtual bool init();
-    virtual NotiManagerScene*   create();
-   
+    static NotiManagerScene*   create();
+    
+    void update(float deltaTime);
+    
+public:
+    NotiManagerLayer*       GetNotiManagerLayer()       {   return m_NotiManagerLayer; }
     
 };
 
