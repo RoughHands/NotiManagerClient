@@ -32,6 +32,29 @@
 		48B632C119A9D18C00710AB2 /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B632BF19A9D18C00710AB2 /* SMWebRequest.m */; };
 		48BC91C319A9FFEC0006B18B /* NotiManagerClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48BC91C219A9FFEC0006B18B /* NotiManagerClient.mm */; };
 		48BC91C419A9FFEC0006B18B /* NotiManagerClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48BC91C219A9FFEC0006B18B /* NotiManagerClient.mm */; };
+		48BC91D019AA33BE0006B18B /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91CD19AA33BE0006B18B /* icon.jpg */; };
+		48BC91D119AA33BE0006B18B /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91CD19AA33BE0006B18B /* icon.jpg */; };
+		48BC91D319AA34230006B18B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91D219AA34230006B18B /* Default-568h@2x.png */; };
+		48BC91D419AA34230006B18B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91D219AA34230006B18B /* Default-568h@2x.png */; };
+		48BC91D719AA34910006B18B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91D519AA34910006B18B /* Default.png */; };
+		48BC91D819AA34910006B18B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91D519AA34910006B18B /* Default.png */; };
+		48BC91D919AA34910006B18B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91D619AA34910006B18B /* Default@2x.png */; };
+		48BC91DA19AA34910006B18B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91D619AA34910006B18B /* Default@2x.png */; };
+		48BC91DC19AA34A80006B18B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91DB19AA34A80006B18B /* Images.xcassets */; };
+		48BC91DE19AA350C0006B18B /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91DD19AA350C0006B18B /* icon.jpg */; };
+		48BC91DF19AA350C0006B18B /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91DD19AA350C0006B18B /* icon.jpg */; };
+		48BC91E419AA37400006B18B /* icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91E319AA37400006B18B /* icon512.png */; };
+		48BC91E519AA37400006B18B /* icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91E319AA37400006B18B /* icon512.png */; };
+		48BC91E919AA37A50006B18B /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91E619AA37A50006B18B /* icon57.png */; };
+		48BC91EA19AA37A50006B18B /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91E619AA37A50006B18B /* icon57.png */; };
+		48BC91EB19AA37A50006B18B /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91E719AA37A50006B18B /* icon114.png */; };
+		48BC91EC19AA37A50006B18B /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91E719AA37A50006B18B /* icon114.png */; };
+		48BC91ED19AA37A50006B18B /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91E819AA37A50006B18B /* icon120.png */; };
+		48BC91EE19AA37A50006B18B /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91E819AA37A50006B18B /* icon120.png */; };
+		48BC91F119AA383D0006B18B /* NotiManagerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48BC91EF19AA383D0006B18B /* NotiManagerScene.cpp */; };
+		48BC91F219AA383D0006B18B /* NotiManagerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48BC91EF19AA383D0006B18B /* NotiManagerScene.cpp */; };
+		48BC91FB19AA3E3C0006B18B /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91FA19AA3E3C0006B18B /* ReadMe.txt */; };
+		48BC91FC19AA3E3C0006B18B /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BC91FA19AA3E3C0006B18B /* ReadMe.txt */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -311,6 +334,19 @@
 		48B632BF19A9D18C00710AB2 /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebRequest.m; sourceTree = "<group>"; };
 		48BC91C119A9FFEC0006B18B /* NotiManagerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotiManagerClient.h; sourceTree = "<group>"; };
 		48BC91C219A9FFEC0006B18B /* NotiManagerClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NotiManagerClient.mm; sourceTree = "<group>"; };
+		48BC91CD19AA33BE0006B18B /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+		48BC91D219AA34230006B18B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		48BC91D519AA34910006B18B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		48BC91D619AA34910006B18B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		48BC91DB19AA34A80006B18B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "NotiManagerClient iOS/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		48BC91DD19AA350C0006B18B /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+		48BC91E319AA37400006B18B /* icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon512.png; sourceTree = "<group>"; };
+		48BC91E619AA37A50006B18B /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		48BC91E719AA37A50006B18B /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+		48BC91E819AA37A50006B18B /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		48BC91EF19AA383D0006B18B /* NotiManagerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NotiManagerScene.cpp; path = ../Classes/NotiManagerScene.cpp; sourceTree = "<group>"; };
+		48BC91F019AA383D0006B18B /* NotiManagerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotiManagerScene.h; path = ../Classes/NotiManagerScene.h; sourceTree = "<group>"; };
+		48BC91FA19AA3E3C0006B18B /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -426,6 +462,8 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
+				48BC91EF19AA383D0006B18B /* NotiManagerScene.cpp */,
+				48BC91F019AA383D0006B18B /* NotiManagerScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -513,6 +551,7 @@
 				48BC91C219A9FFEC0006B18B /* NotiManagerClient.mm */,
 				48B632BE19A9D18C00710AB2 /* SMWebRequest.h */,
 				48B632BF19A9D18C00710AB2 /* SMWebRequest.m */,
+				48BC91FA19AA3E3C0006B18B /* ReadMe.txt */,
 			);
 			name = NotiManagerClient;
 			path = ../NotiManagerClient;
@@ -566,6 +605,16 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				48BC91DB19AA34A80006B18B /* Images.xcassets */,
+				48BC91E319AA37400006B18B /* icon512.png */,
+				48BC91E619AA37A50006B18B /* icon57.png */,
+				48BC91E719AA37A50006B18B /* icon114.png */,
+				48BC91E819AA37A50006B18B /* icon120.png */,
+				48BC91DD19AA350C0006B18B /* icon.jpg */,
+				48BC91D519AA34910006B18B /* Default.png */,
+				48BC91D619AA34910006B18B /* Default@2x.png */,
+				48BC91D219AA34230006B18B /* Default-568h@2x.png */,
+				48BC91CD19AA33BE0006B18B /* icon.jpg */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -817,12 +866,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
+				48BC91D019AA33BE0006B18B /* icon.jpg in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
+				48BC91ED19AA37A50006B18B /* icon120.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
+				48BC91D319AA34230006B18B /* Default-568h@2x.png in Resources */,
+				48BC91D919AA34910006B18B /* Default@2x.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
+				48BC91E419AA37400006B18B /* icon512.png in Resources */,
+				48BC91E919AA37A50006B18B /* icon57.png in Resources */,
+				48BC91DC19AA34A80006B18B /* Images.xcassets in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
+				48BC91DE19AA350C0006B18B /* icon.jpg in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
@@ -830,11 +887,14 @@
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
+				48BC91EB19AA37A50006B18B /* icon114.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
+				48BC91FB19AA3E3C0006B18B /* ReadMe.txt in Resources */,
+				48BC91D719AA34910006B18B /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,10 +902,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48BC91EE19AA37A50006B18B /* icon120.png in Resources */,
+				48BC91DA19AA34910006B18B /* Default@2x.png in Resources */,
 				5087E75317EB910900C73F5D /* CloseNormal.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
+				48BC91EA19AA37A50006B18B /* icon57.png in Resources */,
 				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
+				48BC91EC19AA37A50006B18B /* icon114.png in Resources */,
+				48BC91DF19AA350C0006B18B /* icon.jpg in Resources */,
+				48BC91E519AA37400006B18B /* icon512.png in Resources */,
+				48BC91D119AA33BE0006B18B /* icon.jpg in Resources */,
+				48BC91D819AA34910006B18B /* Default.png in Resources */,
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
+				48BC91FC19AA3E3C0006B18B /* ReadMe.txt in Resources */,
+				48BC91D419AA34230006B18B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,6 +926,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48BC91F119AA383D0006B18B /* NotiManagerScene.cpp in Sources */,
 				48BC91C319A9FFEC0006B18B /* NotiManagerClient.mm in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -872,6 +943,7 @@
 			files = (
 				48B632C119A9D18C00710AB2 /* SMWebRequest.m in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
+				48BC91F219AA383D0006B18B /* NotiManagerScene.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				48BC91C419A9FFEC0006B18B /* NotiManagerClient.mm in Sources */,
@@ -938,6 +1010,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_ENTITLEMENTS = "NotiManagerClient iOS.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -978,6 +1052,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_ENTITLEMENTS = "NotiManagerClient iOS.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";

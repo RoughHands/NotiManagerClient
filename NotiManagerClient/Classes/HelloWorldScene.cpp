@@ -1,4 +1,5 @@
 #include "HelloWorldScene.h"
+#include "NotiManagerClient.h"
 
 USING_NS_CC;
 
@@ -72,6 +73,9 @@ bool HelloWorld::init()
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
     
+    
+    RequestSendPushNotification("BodyBody", 1, "Loc Key Loc Key", "Action Loc", "", "default");
+
     return true;
 }
 
