@@ -84,9 +84,7 @@ static AppDelegate s_sharedApplication;
     // NotiManager To Do : Push Notification
     // Add registration for remote notifications
     
-    // TEST
-    [[NotiManagerClient getInstance] RequestSendPushNotification:@"Body11" badge:2 locKey:@"Loc Key" lokArgs:@"{}" actionLocKey:@"Loc Key" launchImage:@"" sound:@"default"];
-    
+    // TEST    
     [[NotiManagerClient getInstance] InitializeService:application];
     return YES;
 }

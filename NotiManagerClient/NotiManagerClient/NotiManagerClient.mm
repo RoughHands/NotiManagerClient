@@ -206,3 +206,8 @@
 @end // NotiManagerClient
 
 
+void RequestSendPushNotification(const std::string body, const int badge, const std::string locKey, const std::string actionLocKey, const std::string launchImage, const std::string sound, const std::string locArgs)
+{
+    [[NotiManagerClient getInstance] RequestSendPushNotification:[NSString stringWithUTF8String:body.c_str()] badge:badge locKey:[NSString stringWithUTF8String:locKey.c_str()] lokArgs:[NSString stringWithUTF8String:locArgs.c_str()] actionLocKey:[NSString stringWithUTF8String:actionLocKey.c_str()] launchImage:[NSString stringWithUTF8String:launchImage.c_str()] sound:[NSString stringWithUTF8String:sound.c_str()]];
+}
+
