@@ -83,9 +83,8 @@ static AppDelegate s_sharedApplication;
     
     // NotiManager To Do : Push Notification
     // Add registration for remote notifications
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
-    application.applicationIconBadgeNumber = 0;
-
+    
+    [[NotiManagerClient getInstance] InitializeService:application];
     return YES;
 }
 
@@ -95,96 +94,10 @@ static AppDelegate s_sharedApplication;
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
     #if !TARGET_IPHONE_SIMULATOR
-    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
-    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
- 
-    NSUInteger rntypes = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
- 
-    BOOL isPushBadgeOn = NO;
-    BOOL isPushAlertOn = NO;
-    BOOL isPushSoundOn = NO;
- 
-    if( (rntypes & UIRemoteNotificationTypeBadge) != UIRemoteNotificationTypeNone )
-    {
-        isPushBadgeOn = YES;
-    }
-    if( (rntypes & UIRemoteNotificationTypeAlert) != UIRemoteNotificationTypeNone )
-    {
-        isPushAlertOn = YES;
-    }
-    if( (rntypes & UIRemoteNotificationTypeSound) != UIRemoteNotificationTypeNone )
-    {
-        isPushSoundOn = YES;
-    }
     
-    UIDevice *dev = [UIDevice currentDevice];
-//    NSString *deviceUuid = [self uniqueDeviceIdentifier];
-    NSString *deviceName = dev.name;
-    NSString *deviceModel = dev.model;
-    NSString *deviceSystemVersion = dev.systemVersion;
-    NSString *devToken = [[[[deviceToken description] stringByReplacingOccurrencesOfString:@"<" withString:@""] stringByReplacingOccurrencesOfString:@">" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
- 
-    // Build URL String for Registration
-    NSMutableDictionary* deviceInfoDic = [[NSMutableDictionary alloc] init];
-    [deviceInfoDic setValue:appName forKey:DeviceInfoKey(AppName)];
-    [deviceInfoDic setValue:appVersion forKey:DeviceInfoKey(AppVersion)];
-    [deviceInfoDic setValue:devToken forKey:DeviceInfoKey(DeviceToken)];
-//  [deviceInfoDic setValue:deviceUUID forKey:@"DeviceUUID"];
-    [deviceInfoDic setValue:deviceName forKey:DeviceInfoKey(DeviceName)];
-    [deviceInfoDic setValue:deviceModel forKey:DeviceInfoKey(DeviceModel)];
-    [deviceInfoDic setValue:deviceSystemVersion forKey:DeviceInfoKey(DeviceSystemVersion)];
-    [deviceInfoDic setValue:[NSNumber numberWithBool:isPushBadgeOn] forKey:DeviceInfoKey(IsPushBadgeOn)];
-    [deviceInfoDic setValue:[NSNumber numberWithBool:isPushAlertOn] forKey:DeviceInfoKey(IsPushAlertOn)];
-    [deviceInfoDic setValue:[NSNumber numberWithBool:isPushSoundOn] forKey:DeviceInfoKey(IsPushSoundOn)];
+    [[NotiManagerClient getInstance] RequestRegisterDeviceToken:deviceToken];
     
-    NSError* nsError = nil;
-    NSData* deviceInfoJSONData = [NSJSONSerialization dataWithJSONObject:deviceInfoDic options:NSJSONWritingPrettyPrinted error:&nsError];
-
-    NSString* deviceInfoJSONString = nil;
-    if( !deviceInfoJSONData )
-    {
-        NSLog(@"JSON Serialization Error : %@", nsError.localizedDescription);
-        deviceInfoJSONString = [[NSString alloc] initWithString:@"{}"];
-    }
-    else
-    {
-        deviceInfoJSONString = [[NSString alloc] initWithData:deviceInfoJSONData encoding:NSUTF8StringEncoding];
-    }
-    
-    std::string deviceInfoJSONStringC = [deviceInfoJSONString UTF8String];
-    NotiManagerClient::GetInstance().RequestRegisterDeviceToken(deviceInfoJSONStringC);
-    
-    
-    
-    
-    
-    
-    // TEST
-    NSMutableDictionary* notiMessageDic = [[NSMutableDictionary alloc] init];
-    [notiMessageDic setValue:@"message boddy" forKey:@"body"];
-    [notiMessageDic setValue:@"action loc key" forKey:@"action_loc_key"];
-    [notiMessageDic setValue:@"loc key" forKey:@"loc_key"];
-    [notiMessageDic setValue:@"{}" forKey:@"loc_args"];
-    [notiMessageDic setValue:@"" forKey:@"launch_image"];
-    [notiMessageDic setValue:@"default" forKey:@"sound"];
-    [notiMessageDic setValue:[NSNumber numberWithInt:2] forKey:@"badge"];
-    
-    NSData* notiMessageJSONData = [NSJSONSerialization dataWithJSONObject:notiMessageDic options:NSJSONWritingPrettyPrinted error:&nsError];
-    
-    NSString* notiMessageJSONString = nil;
-    if( !notiMessageJSONData )
-    {
-        NSLog(@"JSON serialization Error : %@", nsError.localizedDescription);
-        notiMessageJSONString=[[NSString alloc] initWithString:@"{}"];
-    }
-    else
-    {
-        notiMessageJSONString = [[NSString alloc] initWithData:notiMessageJSONData encoding:NSUTF8StringEncoding];
-    }
-    
-    std::string notiMessageJSONStringC = [notiMessageJSONString UTF8String];
-    NotiManagerClient::GetInstance().RequestSendPushNotification(notiMessageJSONStringC);
-    
+    [[NotiManagerClient getInstance] RequestSendPushNotification:@"Body11" badge:2 locKey:@"Loc Key" lokArgs:@"{}" actionLocKey:@"Loc Key" launchImage:@"" sound:@"default"];
     #endif
 }
 

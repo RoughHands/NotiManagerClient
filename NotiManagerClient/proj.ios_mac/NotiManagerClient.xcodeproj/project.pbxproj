@@ -25,11 +25,13 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		48B52EA719A5C5C700F90790 /* NotiManagerClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48B52E6519A5C5C700F90790 /* NotiManagerClient.cpp */; };
-		48B52EA819A5C5C700F90790 /* NotiManagerClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48B52E6519A5C5C700F90790 /* NotiManagerClient.cpp */; };
 		48B632B519A5DF6D00710AB2 /* libspine iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F3164B19A5992F00D4FA60 /* libspine iOS.a */; };
 		48B632B619A5E1BB00710AB2 /* libnetwork iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F3164D19A5992F00D4FA60 /* libnetwork iOS.a */; };
 		48B632B819A624FB00710AB2 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B632B719A624FB00710AB2 /* GameKit.framework */; };
+		48B632C019A9D18C00710AB2 /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B632BF19A9D18C00710AB2 /* SMWebRequest.m */; };
+		48B632C119A9D18C00710AB2 /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B632BF19A9D18C00710AB2 /* SMWebRequest.m */; };
+		48BC91C319A9FFEC0006B18B /* NotiManagerClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48BC91C219A9FFEC0006B18B /* NotiManagerClient.mm */; };
+		48BC91C419A9FFEC0006B18B /* NotiManagerClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48BC91C219A9FFEC0006B18B /* NotiManagerClient.mm */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -303,10 +305,12 @@
 		1D6058910D05DD3D006BFB54 /* NotiManagerClient iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotiManagerClient iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		48B52E6519A5C5C700F90790 /* NotiManagerClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NotiManagerClient.cpp; sourceTree = "<group>"; };
-		48B52E6619A5C5C700F90790 /* NotiManagerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotiManagerClient.h; sourceTree = "<group>"; };
 		48B632B719A624FB00710AB2 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
 		48B632B919A6250D00710AB2 /* NotiManagerClient iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "NotiManagerClient iOS.entitlements"; sourceTree = "<group>"; };
+		48B632BE19A9D18C00710AB2 /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebRequest.h; sourceTree = "<group>"; };
+		48B632BF19A9D18C00710AB2 /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebRequest.m; sourceTree = "<group>"; };
+		48BC91C119A9FFEC0006B18B /* NotiManagerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotiManagerClient.h; sourceTree = "<group>"; };
+		48BC91C219A9FFEC0006B18B /* NotiManagerClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NotiManagerClient.mm; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -505,8 +509,10 @@
 		48B52E0219A5C5C700F90790 /* NotiManagerClient */ = {
 			isa = PBXGroup;
 			children = (
-				48B52E6519A5C5C700F90790 /* NotiManagerClient.cpp */,
-				48B52E6619A5C5C700F90790 /* NotiManagerClient.h */,
+				48BC91C119A9FFEC0006B18B /* NotiManagerClient.h */,
+				48BC91C219A9FFEC0006B18B /* NotiManagerClient.mm */,
+				48B632BE19A9D18C00710AB2 /* SMWebRequest.h */,
+				48B632BF19A9D18C00710AB2 /* SMWebRequest.m */,
 			);
 			name = NotiManagerClient;
 			path = ../NotiManagerClient;
@@ -850,10 +856,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B52EA719A5C5C700F90790 /* NotiManagerClient.cpp in Sources */,
+				48BC91C319A9FFEC0006B18B /* NotiManagerClient.mm in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
+				48B632C019A9D18C00710AB2 /* SMWebRequest.m in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
 			);
@@ -863,10 +870,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B632C119A9D18C00710AB2 /* SMWebRequest.m in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
-				48B52EA819A5C5C700F90790 /* NotiManagerClient.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				48BC91C419A9FFEC0006B18B /* NotiManagerClient.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
