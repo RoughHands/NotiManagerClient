@@ -25,6 +25,12 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		4816474519AA493200F57FF5 /* notiman_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4816474419AA493200F57FF5 /* notiman_background.png */; };
+		4816474619AA493200F57FF5 /* notiman_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4816474419AA493200F57FF5 /* notiman_background.png */; };
+		4816482A19AA603A00F57FF5 /* SpriteBuilderTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4816482819AA603A00F57FF5 /* SpriteBuilderTester.cpp */; };
+		4816482B19AA603A00F57FF5 /* SpriteBuilderTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4816482819AA603A00F57FF5 /* SpriteBuilderTester.cpp */; };
+		481648AE19AA620800F57FF5 /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 481648AD19AA620800F57FF5 /* Published-iOS */; };
+		481648AF19AA620800F57FF5 /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 481648AD19AA620800F57FF5 /* Published-iOS */; };
 		48B632B519A5DF6D00710AB2 /* libspine iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F3164B19A5992F00D4FA60 /* libspine iOS.a */; };
 		48B632B619A5E1BB00710AB2 /* libnetwork iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F3164D19A5992F00D4FA60 /* libnetwork iOS.a */; };
 		48B632B819A624FB00710AB2 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B632B719A624FB00710AB2 /* GameKit.framework */; };
@@ -330,6 +336,10 @@
 		1D6058910D05DD3D006BFB54 /* NotiManagerClient iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotiManagerClient iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4816474419AA493200F57FF5 /* notiman_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notiman_background.png; sourceTree = "<group>"; };
+		4816482819AA603A00F57FF5 /* SpriteBuilderTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteBuilderTester.cpp; path = ../Classes/SpriteBuilderTester.cpp; sourceTree = "<group>"; };
+		4816482919AA603A00F57FF5 /* SpriteBuilderTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteBuilderTester.h; path = ../Classes/SpriteBuilderTester.h; sourceTree = "<group>"; };
+		481648AD19AA620800F57FF5 /* Published-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Published-iOS"; sourceTree = "<group>"; };
 		48B632B719A624FB00710AB2 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
 		48B632B919A6250D00710AB2 /* NotiManagerClient iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "NotiManagerClient iOS.entitlements"; sourceTree = "<group>"; };
 		48B632BE19A9D18C00710AB2 /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebRequest.h; sourceTree = "<group>"; };
@@ -470,6 +480,8 @@
 				48BC91F019AA383D0006B18B /* NotiManagerScene.h */,
 				48BC91FD19AA3FC20006B18B /* NotiManagerLayer.cpp */,
 				48BC91FE19AA3FC20006B18B /* NotiManagerLayer.h */,
+				4816482819AA603A00F57FF5 /* SpriteBuilderTester.cpp */,
+				4816482919AA603A00F57FF5 /* SpriteBuilderTester.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -611,6 +623,8 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				481648AD19AA620800F57FF5 /* Published-iOS */,
+				4816474419AA493200F57FF5 /* notiman_background.png */,
 				48BC91DB19AA34A80006B18B /* Images.xcassets */,
 				48BC91E319AA37400006B18B /* icon512.png */,
 				48BC91E619AA37A50006B18B /* icon57.png */,
@@ -871,10 +885,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4816474519AA493200F57FF5 /* notiman_background.png in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				48BC91D019AA33BE0006B18B /* icon.jpg in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				48BC91ED19AA37A50006B18B /* icon120.png in Resources */,
+				481648AE19AA620800F57FF5 /* Published-iOS in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				48BC91D319AA34230006B18B /* Default-568h@2x.png in Resources */,
@@ -913,6 +929,7 @@
 				5087E75317EB910900C73F5D /* CloseNormal.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				48BC91EA19AA37A50006B18B /* icon57.png in Resources */,
+				481648AF19AA620800F57FF5 /* Published-iOS in Resources */,
 				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
 				48BC91EC19AA37A50006B18B /* icon114.png in Resources */,
 				48BC91DF19AA350C0006B18B /* icon.jpg in Resources */,
@@ -922,6 +939,7 @@
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
 				48BC91FC19AA3E3C0006B18B /* ReadMe.txt in Resources */,
 				48BC91D419AA34230006B18B /* Default-568h@2x.png in Resources */,
+				4816474619AA493200F57FF5 /* notiman_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -933,6 +951,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48BC91F119AA383D0006B18B /* NotiManagerScene.cpp in Sources */,
+				4816482A19AA603A00F57FF5 /* SpriteBuilderTester.cpp in Sources */,
 				48BC91C319A9FFEC0006B18B /* NotiManagerClient.mm in Sources */,
 				48BC91FF19AA3FC20006B18B /* NotiManagerLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
@@ -953,6 +972,7 @@
 				48BC91F219AA383D0006B18B /* NotiManagerScene.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
 				48BC920019AA3FC20006B18B /* NotiManagerLayer.cpp in Sources */,
+				4816482B19AA603A00F57FF5 /* SpriteBuilderTester.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				48BC91C419A9FFEC0006B18B /* NotiManagerClient.mm in Sources */,
 			);
