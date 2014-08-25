@@ -283,7 +283,7 @@ bool NotiManagerLayer::init()
     }
     
     {
-        Label* pushLabel = Label::createWithTTF("PUSH!", "fonts/Marker Felt.ttf", 60.f);
+        Label* pushLabel = Label::createWithTTF("PUSH!", "fonts/Marker Felt.ttf", 80.f);
         pushLabel->setColor(Color3B::RED);
         MenuItemLabel* pushMenuItem = MenuItemLabel::create(pushLabel, [this](Ref*)
                 {
@@ -332,9 +332,9 @@ bool NotiManagerLayer::init()
         m_PushButton->retain();
         m_PushButton->setAnchorPoint(Point(0.5f,0.5f));
         
-        m_PushButton->setPosition(Point(winSize.width*0.5f, 350.f));
+        m_PushButton->setPosition(Point(winSize.width+300.f, 350.f));
         
-        m_PushButton->runAction(RepeatForever::create(Sequence::create(MoveTo::create(1.3f, Point(-200.f, 350.f)), MoveTo::create(0.f, Point(winSize.width+200.f,350.f)), NULL)));
+        m_PushButton->runAction(RepeatForever::create(Sequence::create(MoveTo::create(2.f, Point(-300.f, 350.f)), MoveTo::create(0.f, Point(winSize.width+300.f,350.f)), NULL)));
         this->addChild(m_PushButton);
     }
 
