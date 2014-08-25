@@ -180,6 +180,9 @@ void NotiManagerLayer::InitializeMessageMode()
         m_BodyEditBox->setDelegate(this);
     
         this->addChild(m_BodyEditBox);
+        
+        
+        m_BodyEditBox->runAction(RepeatForever::create(Sequence::create(MoveBy::create(1.15f, Point(0.f,20.f)),MoveBy::create(1.15f,Point(0.f,-20.f)), NULL)));
     }
     
 }
@@ -306,7 +309,7 @@ bool NotiManagerLayer::init()
                     editBox->setText("");
                     
                     std::string badge = this->m_BadgeEditBox->getText();
-                    int badgeNumber = badge.length()>0? atoi(this->m_BadgeEditBox->getText()):0;
+                    int badgeNumber = badge.length()>0? atoi(this->m_BadgeEditBox->getText()):1;
                     
                     std::string sound = this->m_SoundEditBox->getText();
                     if( sound.length() <= 0 )

@@ -25,11 +25,12 @@
     static NSString* DeviceInfoKey_IsPushAlertOn = @"isPushAlertOn";
     static NSString* DeviceInfoKey_IsPushSoundOn = @"isPushSoundOn";
 
+    static NSString* URL_SendPushNotification = @"http://121.162.245.166:2967/PushNoti/SendPushNotification";
+    static NSString* URL_RegisterUser = @"http://121.162.245.166:2967/PushNoti/RegisterNewUser";
+
     @interface NotiManagerClient : NSObject
     +(NotiManagerClient*)getInstance;
-
     -(void)InitializeService:(UIApplication*)uiApplication;
-
     -(void)RequestRegisterDeviceToken:(NSData*) deviceToken;
     -(void)RequestSendPushNotification:(NSString*)notiBody badge:(int)badge;
     -(void)RequestSendPushNotification:(NSString*)notiBody badge:(int)badge launchImage:(NSString*)launchImage sound:(NSString*)sound;

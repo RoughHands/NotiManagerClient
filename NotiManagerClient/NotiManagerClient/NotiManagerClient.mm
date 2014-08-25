@@ -97,7 +97,7 @@
         return;
     }
 
-    SMWebRequest* request = [SMWebRequest requestWithURL:[NSURL URLWithString:@"http://121.162.245.166:2963/PushNoti/RegisterNewUser"]];
+    SMWebRequest* request = [SMWebRequest requestWithURL:[NSURL URLWithString:URL_RegisterUser]];
     
     [request addTarget:self action:@selector(OnRegisterDeviceTokenCompleted:) forRequestEvents:SMWebRequestEventComplete];
     [request addTarget:self action:@selector(OnRegisterDeviceTokenError:) forRequestEvents:SMWebRequestEventError];
@@ -140,7 +140,7 @@
         return;
     }
     
-    SMWebRequest* request = [SMWebRequest requestWithURL:[NSURL URLWithString:@"http://121.162.245.166:2963/PushNoti/SendPushNotification"]];
+    SMWebRequest* request = [SMWebRequest requestWithURL:[NSURL URLWithString:URL_SendPushNotification]];
     
     [request addTarget:self action:@selector(OnSendPushNotificationCompleted:) forRequestEvents:SMWebRequestEventComplete];
     [request addTarget:self action:@selector(OnSendPushNotificationError:) forRequestEvents:SMWebRequestEventError];
