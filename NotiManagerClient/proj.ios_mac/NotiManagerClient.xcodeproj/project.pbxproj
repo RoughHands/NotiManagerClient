@@ -31,6 +31,10 @@
 		4816482B19AA603A00F57FF5 /* SpriteBuilderTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4816482819AA603A00F57FF5 /* SpriteBuilderTester.cpp */; };
 		481648AE19AA620800F57FF5 /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 481648AD19AA620800F57FF5 /* Published-iOS */; };
 		481648AF19AA620800F57FF5 /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 481648AD19AA620800F57FF5 /* Published-iOS */; };
+		485C9FB019AAD1600079167D /* editbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 485C9FAF19AAD1600079167D /* editbox.png */; };
+		485C9FB119AAD1600079167D /* editbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 485C9FAF19AAD1600079167D /* editbox.png */; };
+		485C9FC319AAE0A10079167D /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 485C9FC219AAE0A10079167D /* fonts */; };
+		485C9FC419AAE0A10079167D /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 485C9FC219AAE0A10079167D /* fonts */; };
 		48B632B519A5DF6D00710AB2 /* libspine iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F3164B19A5992F00D4FA60 /* libspine iOS.a */; };
 		48B632B619A5E1BB00710AB2 /* libnetwork iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F3164D19A5992F00D4FA60 /* libnetwork iOS.a */; };
 		48B632B819A624FB00710AB2 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B632B719A624FB00710AB2 /* GameKit.framework */; };
@@ -340,6 +344,8 @@
 		4816482819AA603A00F57FF5 /* SpriteBuilderTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteBuilderTester.cpp; path = ../Classes/SpriteBuilderTester.cpp; sourceTree = "<group>"; };
 		4816482919AA603A00F57FF5 /* SpriteBuilderTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteBuilderTester.h; path = ../Classes/SpriteBuilderTester.h; sourceTree = "<group>"; };
 		481648AD19AA620800F57FF5 /* Published-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Published-iOS"; sourceTree = "<group>"; };
+		485C9FAF19AAD1600079167D /* editbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editbox.png; sourceTree = "<group>"; };
+		485C9FC219AAE0A10079167D /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		48B632B719A624FB00710AB2 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
 		48B632B919A6250D00710AB2 /* NotiManagerClient iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "NotiManagerClient iOS.entitlements"; sourceTree = "<group>"; };
 		48B632BE19A9D18C00710AB2 /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebRequest.h; sourceTree = "<group>"; };
@@ -623,11 +629,13 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				485C9FC219AAE0A10079167D /* fonts */,
 				481648AD19AA620800F57FF5 /* Published-iOS */,
 				4816474419AA493200F57FF5 /* notiman_background.png */,
 				48BC91DB19AA34A80006B18B /* Images.xcassets */,
 				48BC91E319AA37400006B18B /* icon512.png */,
 				48BC91E619AA37A50006B18B /* icon57.png */,
+				485C9FAF19AAD1600079167D /* editbox.png */,
 				48BC91E719AA37A50006B18B /* icon114.png */,
 				48BC91E819AA37A50006B18B /* icon120.png */,
 				48BC91DD19AA350C0006B18B /* icon.jpg */,
@@ -896,6 +904,7 @@
 				48BC91D319AA34230006B18B /* Default-568h@2x.png in Resources */,
 				48BC91D919AA34910006B18B /* Default@2x.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
+				485C9FC319AAE0A10079167D /* fonts in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				48BC91E419AA37400006B18B /* icon512.png in Resources */,
 				48BC91E919AA37A50006B18B /* icon57.png in Resources */,
@@ -914,6 +923,7 @@
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
+				485C9FB019AAD1600079167D /* editbox.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 				48BC91FB19AA3E3C0006B18B /* ReadMe.txt in Resources */,
 				48BC91D719AA34910006B18B /* Default.png in Resources */,
@@ -929,6 +939,7 @@
 				5087E75317EB910900C73F5D /* CloseNormal.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				48BC91EA19AA37A50006B18B /* icon57.png in Resources */,
+				485C9FB119AAD1600079167D /* editbox.png in Resources */,
 				481648AF19AA620800F57FF5 /* Published-iOS in Resources */,
 				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
 				48BC91EC19AA37A50006B18B /* icon114.png in Resources */,
@@ -938,6 +949,7 @@
 				48BC91D819AA34910006B18B /* Default.png in Resources */,
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
 				48BC91FC19AA3E3C0006B18B /* ReadMe.txt in Resources */,
+				485C9FC419AAE0A10079167D /* fonts in Resources */,
 				48BC91D419AA34230006B18B /* Default-568h@2x.png in Resources */,
 				4816474619AA493200F57FF5 /* notiman_background.png in Resources */,
 			);

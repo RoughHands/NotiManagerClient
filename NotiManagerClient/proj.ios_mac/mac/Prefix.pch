@@ -8,4 +8,14 @@
 
 #ifdef __cplusplus
     #include "cocos2d.h"
+
+    #define RemoveAndReleaseNode(NodePointer) \
+    if( NodePointer != nullptr )\
+    {\
+        NodePointer->stopAllActions();\
+        NodePointer->removeFromParent();\
+        NodePointer->release();\
+        NodePointer = nullptr;\
+    }
+
 #endif
