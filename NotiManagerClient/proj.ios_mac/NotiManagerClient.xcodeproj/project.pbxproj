@@ -707,7 +707,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 8JYZLUCHY9;
+						DevelopmentTeam = JBRCF9WKMY;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 1;
@@ -1081,7 +1081,7 @@
 					/Users/roughhands_black/Projects/RoughHands/NotiManager/NotiManagerClient/NotiManagerClient/NotiManagerClient/curl/lib,
 					/Users/roughhands_black/Projects/RoughHands/NotiManager/NotiManagerClient/NotiManagerClient/NotiManagerClient/curlpp/lib,
 				);
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "623f488f-8c69-4947-9086-044f0c830572";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1121,7 +1121,7 @@
 					/Users/roughhands_black/Projects/RoughHands/NotiManager/NotiManagerClient/NotiManagerClient/NotiManagerClient/curl/lib,
 					/Users/roughhands_black/Projects/RoughHands/NotiManager/NotiManagerClient/NotiManagerClient/NotiManagerClient/curlpp/lib,
 				);
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "623f488f-8c69-4947-9086-044f0c830572";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
