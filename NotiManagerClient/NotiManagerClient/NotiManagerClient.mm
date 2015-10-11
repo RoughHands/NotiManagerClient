@@ -38,8 +38,17 @@
 
 -(void)InitializeService:(UIApplication*)uiApplication
 {
+    // Register for Remote Notification
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
     uiApplication.applicationIconBadgeNumber = 0;
+    
+    // Register Notification Settings.
+    // (ios8 and later must register belows to use local/remote notification
+    UIUserNotificationType types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+    UIUserNotificationSettings *mySettings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+    
+//    UIUserNotificationSettings* currentSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
 }
 
 
